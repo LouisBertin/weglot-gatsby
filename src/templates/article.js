@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import ReactMarkdown from "react-markdown";
 
 const ArticleTemplate = ({ data }) => (
   <Layout>
-    {/* <p>by <Link to={`/authors/User_${data.strapiArticle.author.id}`}>{data.strapiArticle.author.username}</Link></p>
-    <Img fixed={data.strapiArticle.image.childImageSharp.fixed}/>
-    <p>{data.strapiArticle.content}</p> */}
     <section className="section">
       <div className="container content">
         <div className="columns">

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { withPrefix } from "gatsby";
 
 export default function HTML(props) {
   return (
@@ -25,7 +26,8 @@ export default function HTML(props) {
           type="text/javascript"
           src="https://cdn.weglot.com/weglot.min.js"
         ></script>
-          <script 
+          <script src={withPrefix("script.js")} type="text/javascript" defer/>
+          {/* <script 
                 type="text/javascript"
                 key="newsletter-start"
                 dangerouslySetInnerHTML={{
@@ -34,7 +36,7 @@ export default function HTML(props) {
                       api_key: 'wg_fe7ca09da0c30c4573b0fd2d79964daf3'
                   })
                   `}}
-            />
+            /> */}
       </body>
     </html>
   )

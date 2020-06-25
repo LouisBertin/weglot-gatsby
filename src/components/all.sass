@@ -9,7 +9,9 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
 $weglot-blue: #0a1a42
+$weglot-light-blue: #3d46fb
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -62,12 +64,15 @@ $weglot-blue: #0a1a42
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $weglot-blue;
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $weglot-blue
+    box-shadow: inset 0 0 0 2px $weglot-blue
     -webkit-transition: all .15s ease
     transition: all .15s ease
+    &:hover
+      background-color: $weglot-blue
+      color: #fff
 
 .margin-top-0
   margin-top: 0 !important
@@ -142,12 +147,18 @@ $menu-label-color: $white-ter
 
 
 .weglot-light-background
-  background-color: #ebedfe!important;
+  background-color: #ebedfe!important
+
+.weglot-text-blue
+  color: $weglot-blue!important
+
+.weglot-text-light-blue
+  color: $weglot-light-blue!important
 
 footer
   .menu-list
     a
-      color: $weglot-blue;
+      color: $weglot-blue
     a:hover
-      background-color: $weglot-blue;
-      color: white!important;
+      background-color: $weglot-blue
+      color: white!important

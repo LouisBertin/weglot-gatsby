@@ -50,12 +50,12 @@ const TemplateWrapper = ({ children }) => {
 
         <link rel="alternate" hreflang="en" href="https://www.multilingual-gatsby.com"></link>
         <link rel="alternate" hreflang="fr" href="https://fr.multilingual-gatsby.com"></link>
-        <script
+        {/* <script
           type="text/javascript"
           src="https://cdn.weglot.com/weglot.min.js"
           defer
         ></script>
-        <script src={withPrefix("script.js")} type="text/javascript" defer/>
+        <script src={withPrefix("script.js")} type="text/javascript" defer/> */}
       </Helmet>
       <Navbar />
       <div>{children}</div>

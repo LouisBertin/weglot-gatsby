@@ -5,12 +5,12 @@ const addScript = url => {
     document.body.appendChild(script)
 }
   
-export const onClientEntry = () => {
-    window.onload = () => {
-        addScript("https://cdn.weglot.com/weglot.min.js")
-        addScript("https://www.multilingual-gatsby.com/script.js")
-    }
-}   
+// export const onClientEntry = () => {
+//     window.onload = () => {
+//         addScript("https://cdn.weglot.com/weglot.min.js")
+//         addScript("https://www.multilingual-gatsby.com/script.js")
+//     }
+// }   
 
 // export const onRouteUpdate = () => {
 //     if (window.Weglot) {

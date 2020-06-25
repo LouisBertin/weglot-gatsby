@@ -48,8 +48,8 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
 
-        <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-        <script src={withPrefix("script.js")} type="text/javascript" />
+        <link rel="alternate" hreflang="en" href="https://www.multilingual-gatsby.com"></link>
+        <link rel="alternate" hreflang="fr" href="https://fr.multilingual-gatsby.com"></link>
       </Helmet>
       <Navbar />
       <div>{children}</div>
